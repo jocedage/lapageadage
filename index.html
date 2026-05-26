@@ -126,20 +126,19 @@
             views: {
                 home: {
                     id: "home", title: "La Page @ Dage", breadcrumb: "Accueil",
-                    filters: [ { id: 'all', label: 'Toutes' }, { id: 'maths', label: 'Maths' }, { id: 'evaluation', label: 'Évaluation' }, { id: 'tic', label: 'TIC' }, { id: 'iag', label: 'IAG' }, { id: 'sciences', label: 'Sciences' }, { id: 'pedagogie', label: 'Pédagogie active' } ],
+                    filters: [ { id: 'all', label: 'Toutes' }, { id: 'maths', label: 'Maths' }, { id: 'evaluation', label: 'Évaluation' }, { id: 'tic', label: 'TIC' }, { id: 'pedagogie', label: 'Pédagogie active' } ],
                     compactMode: true, // Descriptions désactivées pour la page d'accueil
                     cards: [
-                        { id: 'simaths', title: 'SIMaths', icon: 'infinity', color: 'navy', badges: [{ label: 'Maths', color: 'navy' }, { label: 'TIC', color: 'blue' }, { label: 'IAG', color: 'burgundy' }], categories: ['maths', 'tic', 'iag'], btnText: 'Accéder à la section', isInternal: false },
-                        { id: 'robots', title: 'Robots conversationnels', icon: 'bot', color: 'blue', badges: [{ label: 'TIC', color: 'blue' }, { label: 'IAG', color: 'burgundy' }, { label: 'Maths', color: 'navy' }], categories: ['tic', 'iag', 'maths'], btnText: 'Ouvrir la section', isInternal: false },
-                        { id: 'desmosamplify', title: 'Desmos, Amplify & Polypad', icon: 'line-chart', color: 'blue', badges: [{ label: 'Maths', color: 'navy' }, { label: 'TIC', color: 'blue' }, { label: 'Évaluation', color: 'burgundy' }, { label: 'Pédagogie active', color: 'burgundy' }], categories: ['maths', 'tic', 'evaluation', 'pedagogie'], btnText: 'Ouvrir la section' },
-                        { id: 'mathsci', title: 'Maths-Sciences-TIC & Éval', icon: 'flask-conical', color: 'navy', badges: [{ label: 'Maths', color: 'navy' }, { label: 'Sciences', color: 'navy' }, { label: 'TIC', color: 'blue' }, { label: 'Évaluation', color: 'burgundy' }], categories: ['maths', 'sciences', 'tic', 'evaluation'], btnText: 'Accéder à la section' },
-                        { id: 'collabo', title: 'La classe Collabo-Réflexive', icon: 'users', color: 'burgundy', badges: [{ label: 'Maths', color: 'navy' }, { label: 'Pédagogie active', color: 'burgundy' }, { label: 'Évaluation', color: 'burgundy' }], categories: ['maths', 'pedagogie', 'evaluation'], btnText: 'Explorer la section' },
-                        { id: 'heros', title: 'Évaluation dont vous êtes le héros', icon: 'gamepad-2', color: 'burgundy', badges: [{ label: 'Évaluation', color: 'burgundy' }, { label: 'TIC', color: 'blue' }, { label: 'Pédagogie active', color: 'burgundy' }], categories: ['evaluation', 'tic', 'pedagogie'], btnText: 'Entrer dans la section' },
-                        { id: 'enfinir202060', title: 'Pour en finir avec le 20-20-60', icon: 'ban', color: 'navy', badges: [{ label: 'Évaluation', color: 'burgundy' }], categories: ['evaluation'], btnText: 'Découvrir la section' }
+                        { id: 'simaths', title: 'SiMaths', icon: 'infinity', color: 'navy', badges: [{ label: 'Maths', color: 'navy' }], categories: ['maths'], btnText: 'Accéder à la section', isInternal: false },
+                        { id: 'desmosamplify', title: 'Desmos, Amplify & Polypad', icon: 'line-chart', color: 'blue', badges: [{ label: 'Maths', color: 'navy' }, { label: 'TIC', color: 'blue' }], categories: ['maths', 'tic'], btnText: 'Ouvrir la section' },
+                        { id: 'mathsci', title: 'Maths-Sciences-TIC & Éval', icon: 'flask-conical', color: 'navy', badges: [{ label: 'Sciences', color: 'navy' }, { label: 'Éval', color: 'burgundy' }], categories: ['maths', 'evaluation', 'tic'], btnText: 'Accéder à la section' },
+                        { id: 'collabo', title: 'La classe Collabo-Réflexive', icon: 'users', color: 'burgundy', badges: [{ label: 'Pédagogie', color: 'burgundy' }], categories: ['maths', 'pedagogie'], btnText: 'Explorer la section' },
+                        { id: 'heros', title: 'Évaluation dont vous êtes le héros', icon: 'gamepad-2', color: 'burgundy', badges: [{ label: 'Éval', color: 'burgundy' }, { label: 'Héros', color: 'blue' }], categories: ['evaluation', 'pedagogie'], btnText: 'Entrer dans la section' },
+                        { id: 'enfinir202060', title: 'Pour en finir avec le 20-20-60', icon: 'ban', color: 'navy', badges: [{ label: 'Pédagogie', color: 'navy' }], categories: ['pedagogie'], btnText: 'Découvrir la section' }
                     ]
                 },
                 simaths: {
-                    id: "simaths", title: "SIMaths", breadcrumb: "La Page @ Dage / SIMaths",
+                    id: "simaths", title: "SiMaths", breadcrumb: "La Page @ Dage / SiMaths",
                     filters: [ { id: 'all', label: 'Toutes' }, { id: 'nombres', label: 'Nombres & Algèbre' }, { id: 'geometrie', label: 'Géométrie' }, { id: 'donnees', label: 'Données & Finance' }, { id: 'sciences', label: 'Sciences & Labos' } ],
                     cards: [
                         { id: 'arithmetique', title: 'Arithmétique', icon: 'hash', color: 'navy', desc: "Fondations du calcul numérique, fractions, nombres premiers, divisibilité.", badges: [{ label: 'Nombres', color: 'navy' }], categories: ['nombres'], targetView: 'arithmetique', btnText: 'Accéder à la section', isInternal: true },
@@ -155,7 +154,7 @@
                     ]
                 },
                 arithmetique: {
-                    id: "arithmetique", title: "Arithmétique", breadcrumb: "La Page @ Dage / SIMaths / Arithmétique",
+                    id: "arithmetique", title: "Arithmétique", breadcrumb: "La Page @ Dage / SiMaths / Arithmétique",
                     gridClass: "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4",
                     compactMode: true, // Descriptions désactivées pour la section arithmétique
                     infoText: "7 outils d'apprentissage interactifs disponibles",
@@ -170,13 +169,12 @@
                     ]
                 },
                 'tool-addsub': {
-                    id: 'tool-addsub', title: "Addition & soustraction d'entiers", breadcrumb: "La Page @ Dage / SIMaths / Arithmétique / Simulateur", isTool: true
+                    id: 'tool-addsub', title: "Addition & soustraction d'entiers", breadcrumb: "La Page @ Dage / SiMaths / Arithmétique / Simulateur", isTool: true
                 }
             },
             links: {
                 // Liens de redirection externes actualisés et configurables
                 "simaths": "https://sites.google.com/view/simaths/accueil",
-                "robots": "https://sites.google.com/view/mathcreatives/robots-conversationnels",
                 "desmosamplify": "https://sites.google.com/view/desmospolypad/accueil",
                 "mathsci": "https://sites.google.com/view/mathcreatives/accueil",
                 "collabo": "https://sites.google.com/view/classebtc/accueil",
@@ -220,7 +218,6 @@
         // --- DICTIONNAIRE D'ICONES VECTORIELS ET DES CLONES BRAND SVG DE SECOURS ---
         const SVGS = {
             'infinity': (c) => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={c}><path d="M12 12c-2-2.67-4-4-6-4a4 4 0 1 0 0 8c2 0 4-1.33 6-4Zm0 0c2 2.67 4 4 6 4a4 4 0 1 0 0-8c-2 0-4 1.33-6 4Z"/></svg>,
-            'bot': (c) => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={c}><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><line x1="8" y1="15" x2="8" y2="15.01"/><line x1="16" y1="15" x2="16" y2="15.01"/><path d="M9 18h6"/></svg>,
             'line-chart': (c) => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={c}><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>,
             'flask-conical': (c) => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={c}><path d="M10 2v7.586a2 2 0 0 1-.586 1.414l-5.828 5.828A2 2 0 0 0 3 18.242V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-1.758a2 2 0 0 0-.586-1.414l-5.828-5.828A2 2 0 0 1 14 9.586V2Z"/><path d="M6 14h12"/><path d="M10 2h4"/></svg>,
             'users': (c) => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={c}><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>,
@@ -256,7 +253,7 @@
             'check-circle': (c) => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={c}><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>,
             'copy': (c) => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={c}><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>,
             
-            // Clones vectoriels (SVG) de secours
+            // Clones vectoriels (SVG) de secours ultra-haute fidélité si le chargement externe ou local échoue
             'desmos': (c) => (
                 <svg viewBox="0 0 100 100" className={c}>
                     <rect width="100" height="100" rx="22" fill="#007a3e" />
@@ -272,11 +269,15 @@
                     <path d="M22,34 L50,20 L78,34 L52,48 L48,46 Z" fill="#a2d2ff" />
                 </svg>
             ),
+            // RE-DESSINÉ A 100% EN HAUTE FIDÉLITÉ VECTORIELLE SVG (Idéal pour l'intégration Google Sites)
             'sheets': (c) => (
                 <svg viewBox="0 0 100 100" className={c} xmlns="http://www.w3.org/2000/svg">
+                    {/* Fond vert arrondi */}
                     <rect width="100" height="100" rx="24" fill="#107c41" />
+                    {/* Bandeau latéral gauche cyan */}
                     <path d="M 28 0 C 12.5 0 0 12.5 0 28 L 0 72 C 0 87.5 12.5 100 28 100 L 34 100 L 34 0 Z" fill="#0f9d58" />
                     <path d="M 28 0 C 12.5 0 0 12.5 0 28 L 0 72 C 0 87.5 12.5 100 28 100 L 31 100 L 31 0 Z" fill="#20a8d8" opacity="0.4" />
+                    {/* Croix blanche d'insertion Google Sheets */}
                     <rect x="47" y="56" width="28" height="7" rx="3" fill="white" />
                     <rect x="57.5" y="45.5" width="7" height="28" rx="3" fill="white" />
                 </svg>
@@ -288,6 +289,14 @@
             if (typeof renderFn !== 'function') {
                 renderFn = SVGS['sparkles'];
             }
+            if (typeof renderFn !== 'function') {
+                // Secours ultime hardcodé
+                return (
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
+                        <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+                    </svg>
+                );
+            }
             try {
                 return renderFn(className);
             } catch (e) {
@@ -297,6 +306,7 @@
         };
 
         // --- COMPOSANT : COMPOSANT LOGO DE MARQUE RÉSILIENT ---
+        // Essaye l'URL de téléchargement direct de Google Drive, puis le fichier SVG local, puis l'icône de secours interne
         const BrandIcon = ({ src, fallbackSrc, fallbackName, alt }) => {
             const [currentSrc, setCurrentSrc] = useState(src);
             const [hasError, setHasError] = useState(false);
@@ -332,7 +342,7 @@
                 <div className="liquid-glass liquid-glass-hover rounded-3xl p-4 sm:p-5 flex flex-col justify-between relative group overflow-hidden">
                     <div className="flex flex-col gap-3">
                         <div className="flex justify-between items-start">
-                            <div className={`w-10 h-10 rounded-xl flex items-center justify-center border ${theme.wrapper}`}>
+                            <div className="w-10 h-10 rounded-xl flex items-center justify-center border ${theme.wrapper}">
                                 <Icon name={card.icon} className="w-5 h-5" />
                             </div>
                             <div className="flex gap-1.5 flex-wrap justify-end">
@@ -371,94 +381,18 @@
 
             return (
                 <div className="flex flex-col gap-6 animate-[fadeIn_0.3s_ease-out]">
-                    {/* BARRE DE BOUTONS D'ACCÈS RAPIDE AUX SITES EXTERNES (ACCUEIL UNIQUEMENT) */}
-                    {viewData.id === 'home' && (
-                        <section className="w-full max-w-5xl mx-auto flex flex-col items-center p-5 sm:p-6 rounded-2xl liquid-glass justify-center">
-                            <div className="flex flex-wrap gap-3 sm:gap-4 justify-center w-full">
-                                <a href="https://classroom.amplify.com/?lang=fr" target="_blank" rel="noopener noreferrer" className="px-5 py-3 text-sm sm:text-base font-extrabold rounded-2xl transition-all duration-300 bg-white/70 text-slate-700 hover:bg-[#f37021] hover:text-white border border-slate-200/40 shadow-sm flex items-center gap-3 hover:scale-105">
-                                    <BrandIcon 
-                                        src="https://drive.google.com/thumbnail?id=1yd9XTxnv75NQ7up9QRHIvuGyjPa4jsQN&sz=w200" 
-                                        fallbackSrc="Amplify Icon.png" 
-                                        fallbackName="school" 
-                                        alt="Amplify Classroom" 
-                                    />
-                                    <span>Amplify Classroom</span>
-                                </a>
-                                <a href="https://www.desmos.com/calculator?lang=fr" target="_blank" rel="noopener noreferrer" className="px-5 py-3 text-sm sm:text-base font-extrabold rounded-2xl transition-all duration-300 bg-white/70 text-slate-700 hover:bg-[#408ec6] hover:text-white border border-slate-200/40 shadow-sm flex items-center gap-3 hover:scale-105">
-                                    <BrandIcon 
-                                        src="https://company-76059.frontify.com/api/attachment/download/eyJibG9ja19yZWZlcmVuY2UiOm51bGwsImlkIjo0ODY2MjR9:frontify:1pukhSYYTd3t4j1K7ZlYupYiZ1kWyvAbkiKHOorD4Vg" 
-                                        fallbackSrc="Rounded App Icon.svg" 
-                                        fallbackName="desmos" 
-                                        alt="Desmos" 
-                                    />
-                                    <span>Desmos</span>
-                                </a>
-                                <a href="https://polypad.amplify.com/fr/p" target="_blank" rel="noopener noreferrer" className="px-5 py-3 text-sm sm:text-base font-extrabold rounded-2xl transition-all duration-300 bg-white/70 text-slate-700 hover:bg-[#7a2048] hover:text-white border border-slate-200/40 shadow-sm flex items-center gap-3 hover:scale-105">
-                                    <BrandIcon 
-                                        src="https://polypad.amplify.com/images/polypad.svg" 
-                                        fallbackSrc="polypad.svg" 
-                                        fallbackName="polypad" 
-                                        alt="Polypad" 
-                                    />
-                                    <span>Polypad</span>
-                                </a>
-                                <a href="https://sites.google.com/view/desmospolypad/desmosfr" target="_blank" rel="noopener noreferrer" className="px-5 py-3 text-sm sm:text-base font-extrabold rounded-2xl transition-all duration-300 bg-white/70 text-slate-700 hover:bg-[#f37021] hover:text-white border border-slate-200/40 shadow-sm flex items-center gap-3 hover:scale-105">
-                                    <BrandIcon 
-                                        src="https://drive.google.com/thumbnail?id=1yd9XTxnv75NQ7up9QRHIvuGyjPa4jsQN&sz=w200" 
-                                        fallbackSrc="google-sheets-icon.svg" 
-                                        fallbackName="sheets" 
-                                        alt="Activités Amplify (DesmosFR)" 
-                                    />
-                                    <span>Activités Amplify (DesmosFR)</span>
-                                </a>
-                            </div>
-                        </section>
-                    )}
-
                     {viewData.filters ? (
-                        <section className="w-full max-w-4xl mx-auto flex justify-center p-4 rounded-2xl liquid-glass -mt-2">
+                        <section className="w-full max-w-4xl mx-auto flex justify-center p-4 rounded-2xl liquid-glass">
                             <div className="flex flex-wrap gap-2 justify-center">
-                                {viewData.filters.map(f => {
-                                    const isActive = filter === f.id;
-                                    let colorClasses = '';
-                                    switch (f.id) {
-                                        case 'maths':
-                                        case 'nombres':
-                                        case 'sciences':
-                                            colorClasses = isActive
-                                                ? 'bg-[#1e2761] text-white shadow-md shadow-[#1e2761]/20 border-[#1e2761]'
-                                                : 'bg-[#1e2761]/5 text-[#1e2761] border-[#1e2761]/10 hover:bg-[#1e2761]/10 hover:border-[#1e2761]/20';
-                                            break;
-                                        case 'tic':
-                                        case 'donnees':
-                                            colorClasses = isActive
-                                                ? 'bg-[#408ec6] text-white shadow-md shadow-[#408ec6]/20 border-[#408ec6]'
-                                                : 'bg-[#408ec6]/10 text-[#408ec6] border-[#408ec6]/20 hover:bg-[#408ec6]/15 hover:border-[#408ec6]/30';
-                                            break;
-                                        case 'evaluation':
-                                        case 'iag':
-                                        case 'pedagogie':
-                                        case 'geometrie':
-                                            colorClasses = isActive
-                                                ? 'bg-[#7a2048] text-white shadow-md shadow-[#7a2048]/20 border-[#7a2048]'
-                                                : 'bg-[#7a2048]/10 text-[#7a2048] border-[#7a2048]/20 hover:bg-[#7a2048]/15 hover:border-[#7a2048]/30';
-                                            break;
-                                        default: // 'all' or default
-                                            colorClasses = isActive
-                                                ? 'bg-slate-800 text-white shadow-md shadow-slate-800/20 border-slate-800'
-                                                : 'bg-slate-100 text-slate-700 border-slate-200 hover:bg-slate-200/50';
-                                            break;
-                                    }
-                                    return (
-                                        <button 
-                                            key={f.id} 
-                                            onClick={() => setFilter(f.id)} 
-                                            className={`px-4 py-2 text-xs font-bold rounded-xl transition-all duration-300 border cursor-pointer ${colorClasses}`}
-                                        >
-                                            {f.label}
-                                        </button>
-                                    );
-                                })}
+                                {viewData.filters.map(f => (
+                                    <button 
+                                        key={f.id} 
+                                        onClick={() => setFilter(f.id)} 
+                                        className={`px-4 py-2 text-xs font-bold rounded-xl transition-all duration-300 ${filter === f.id ? 'bg-[#1e2761] text-white shadow-md shadow-[#1e2761]/20' : 'bg-white/60 text-slate-600 hover:bg-white border border-slate-200/40'}`}
+                                    >
+                                        {f.label}
+                                    </button>
+                                ))}
                             </div>
                         </section>
                     ) : viewData.infoText ? (
@@ -468,6 +402,50 @@
                             </div>
                         </section>
                     ) : null}
+
+                    {/* BARRE DE BOUTONS D'ACCÈS RAPIDE AUX SITES EXTERNES (ACCUEIL UNIQUEMENT) */}
+                    {viewData.id === 'home' && (
+                        <section className="w-full max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-4 p-4 rounded-2xl liquid-glass justify-center -mt-2">
+                            <div className="text-xs font-extrabold text-slate-500 flex items-center gap-1.5 whitespace-nowrap">
+                                <Icon name="external-link" className="w-4 h-4 text-[#408ec6]" /> Accès Rapide :
+                            </div>
+                            <div className="flex flex-wrap gap-2 justify-center">
+                                <a href="https://classroom.amplify.com/?lang=fr" target="_blank" rel="noopener noreferrer" className="px-3.5 py-2 text-xs font-bold rounded-xl transition-all duration-300 bg-white/60 text-slate-700 hover:bg-[#1e2761] hover:text-white border border-slate-200/40 shadow-sm flex items-center gap-2 group">
+                                    <div className="w-5 h-5 flex items-center justify-center flex-shrink-0">
+                                        <Icon name="school" className="w-4 h-4 text-[#1e2761] group-hover:text-white transition-colors" />
+                                    </div>
+                                    <span>Amplify Classroom</span>
+                                </a>
+                                <a href="https://www.desmos.com/calculator?lang=fr" target="_blank" rel="noopener noreferrer" className="px-3.5 py-2 text-xs font-bold rounded-xl transition-all duration-300 bg-white/60 text-slate-700 hover:bg-[#408ec6] hover:text-white border border-slate-200/40 shadow-sm flex items-center gap-2">
+                                    <BrandIcon 
+                                        src="https://company-76059.frontify.com/api/attachment/download/eyJibG9ja19yZWZlcmVuY2UiOm51bGwsImlkIjo0ODY2MjR9:frontify:1pukhSYYTd3t4j1K7ZlYupYiZ1kWyvAbkiKHOorD4Vg" 
+                                        fallbackSrc="Rounded App Icon.svg" 
+                                        fallbackName="desmos" 
+                                        alt="Desmos" 
+                                    />
+                                    <span>Desmos</span>
+                                </a>
+                                <a href="https://polypad.amplify.com/fr/p" target="_blank" rel="noopener noreferrer" className="px-3.5 py-2 text-xs font-bold rounded-xl transition-all duration-300 bg-white/60 text-slate-700 hover:bg-[#7a2048] hover:text-white border border-slate-200/40 shadow-sm flex items-center gap-2">
+                                    <BrandIcon 
+                                        src="https://polypad.amplify.com/images/polypad.svg" 
+                                        fallbackSrc="polypad.svg" 
+                                        fallbackName="polypad" 
+                                        alt="Polypad" 
+                                    />
+                                    <span>Polypad</span>
+                                </a>
+                                <a href="https://docs.google.com/spreadsheets/d/18H1x8pbsu3_urmnsuze8ENo28T03KcqBMePxN_L2fxk/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer" className="px-3.5 py-2 text-xs font-bold rounded-xl transition-all duration-300 bg-white/60 text-slate-700 hover:bg-emerald-600 hover:text-white border border-slate-200/40 shadow-sm flex items-center gap-2">
+                                    <BrandIcon 
+                                        src="https://drive.google.com/thumbnail?id=1QSg-vU9-bSMVkEJBM7zF6iuKjns4odL9&sz=w80" 
+                                        fallbackSrc="google-sheets-icon.svg" 
+                                        fallbackName="sheets" 
+                                        alt="Activités Desmos FR" 
+                                    />
+                                    <span>Activités Desmos FR</span>
+                                </a>
+                            </div>
+                        </section>
+                    )}
 
                     <section className={`grid ${viewData.gridClass || 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'} gap-6`}>
                         {filteredCards.map(card => <Card key={card.id} card={card} url={links[card.id]} isCompact={viewData.compactMode} onNavigate={navigateTo} />)}
@@ -567,7 +545,7 @@
                                 <input type="number" value={a} onChange={e => setA(Number(e.target.value) || 0)} className="w-20 px-2 py-1.5 text-center text-slate-900 font-bold bg-white rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#408ec6]" />
                             </div>
                             <div className="flex flex-col mt-4">
-                                <select value={op} onChange={e => setOp(e.target.value)} className="px-3 py-1.5 font-extrabold bg-white text-slate-850 rounded-xl border border-slate-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#408ec6]">
+                                <select value={op} onChange={e => setOp(e.target.value)} className="px-3 py-1.5 font-extrabold bg-white rounded-xl border border-slate-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#408ec6]">
                                     <option value="+">+</option><option value="-">−</option>
                                 </select>
                             </div>
@@ -580,7 +558,7 @@
 
                     <div className="bg-slate-50/50 border-b border-slate-100 px-4 py-3 flex items-start gap-3 text-xs text-slate-600">
                         <Icon name="info" className="w-5 h-5 text-[#1e2761] mt-0.5 flex-shrink-0" />
-                        <p className="font-medium leading-relaxed">{op === '+' ? "On part de A, puis on ajoute la valeur de B. Vers la droite si B est positif, vers la gauche si B est négatif." : "Soustraire B revient à ajouter l'opposé de B. On change ainsi le sens de la flèche de B."} Utilisez les curseurs ronds pour glisser directement les extrémités sur la droite.</p>
+                        <p className="font-medium leading-relaxed">{op === '+' ? "On part de A, puis on ajoute la value de B. Vers la droite si B est positif, vers la gauche si B est négatif." : "Soustraire B revient à ajouter l'opposé de B. On change ainsi le sens de la flèche de B."} Utilisez les curseurs ronds pour glisser directement les extrémités sur la droite.</p>
                     </div>
 
                     <div className="relative w-full overflow-hidden bg-white p-2 touch-none cursor-crosshair" onPointerMove={handlePointerMove} onPointerUp={() => setDragging(null)} onPointerLeave={() => setDragging(null)}>
@@ -666,39 +644,31 @@
                                 </div>
                             </div>
                             
-                            <div className="flex flex-col md:flex-row items-center gap-3">
-                                {/* Lien du Site Principal */}
-                                <a href="https://bit.ly/lapageadage" target="_blank" rel="noopener noreferrer" className="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-md transition-all duration-300 text-sm sm:text-base md:text-lg font-extrabold tracking-wide text-white flex items-center gap-2 hover:scale-105 shadow-sm" title="Visiter La Page @ Dage">
-                                    <Icon name="external-link" className="w-4 h-4 sm:w-4.5 sm:h-4.5 text-white" />
-                                    <span>bit.ly/lapageadage</span>
-                                </a>
-
-                                <div className="flex items-center gap-3">
-                                    {/* Liens de réseaux sociaux et courriel */}
-                                    <div className="flex items-center gap-2">
-                                        <a href="https://www.facebook.com/lapageadage" target="_blank" rel="noopener noreferrer" className="p-2.5 rounded-full bg-white/10 hover:bg-white/25 border border-white/20 backdrop-blur-md transition-all duration-300 text-white focus:outline-none hover:scale-110" title="Facebook">
-                                            <Icon name="facebook" className="w-4.5 h-4.5 sm:w-5 sm:h-5" />
-                                        </a>
-                                        <a href="https://www.linkedin.com/in/jocedage/" target="_blank" rel="noopener noreferrer" className="p-2.5 rounded-full bg-white/10 hover:bg-white/25 border border-white/20 backdrop-blur-md transition-all duration-300 text-white focus:outline-none hover:scale-110" title="LinkedIn">
-                                            <Icon name="linkedin" className="w-4.5 h-4.5 sm:w-5 sm:h-5" />
-                                        </a>
-                                        {/* Lien de courriel Jocedage */}
-                                        <a href="mailto:jocedage@gmail.com" className="p-2.5 rounded-full bg-white/10 hover:bg-white/25 border border-white/20 backdrop-blur-md transition-all duration-300 text-white focus:outline-none hover:scale-110" title="Nous écrire par courriel">
-                                            <Icon name="mail" className="w-4.5 h-4.5 sm:w-5 sm:h-5" />
-                                        </a>
-                                    </div>
-                                    
-                                    {/* Bouton Retour dynamique */}
-                                    <button onClick={navigateBack} className={`px-5 py-2.5 rounded-xl bg-white/15 hover:bg-white/25 border border-white/20 backdrop-blur-md transition-all duration-300 text-xs sm:text-sm font-bold tracking-wide flex items-center gap-2.5 shadow-sm text-white focus:outline-none cursor-pointer ${currentView === 'home' ? 'hidden' : 'flex'}`}>
-                                        <Icon name="arrow-left" className="w-4 h-4" /> <span className="hidden sm:inline">Retour</span>
-                                    </button>
+                            <div className="flex items-center gap-3">
+                                {/* Liens de réseaux sociaux et courriel */}
+                                <div className="flex items-center gap-2 mr-1">
+                                    <a href="https://www.facebook.com/lapageadage" target="_blank" rel="noopener noreferrer" className="p-2.5 rounded-full bg-white/10 hover:bg-white/25 border border-white/20 backdrop-blur-md transition-all duration-300 text-white focus:outline-none hover:scale-110" title="Facebook">
+                                        <Icon name="facebook" className="w-4.5 h-4.5 sm:w-5 sm:h-5" />
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/jocedage/" target="_blank" rel="noopener noreferrer" className="p-2.5 rounded-full bg-white/10 hover:bg-white/25 border border-white/20 backdrop-blur-md transition-all duration-300 text-white focus:outline-none hover:scale-110" title="LinkedIn">
+                                        <Icon name="linkedin" className="w-4.5 h-4.5 sm:w-5 sm:h-5" />
+                                    </a>
+                                    {/* Lien de courriel Jocedage */}
+                                    <a href="mailto:jocedage@gmail.com" className="p-2.5 rounded-full bg-white/10 hover:bg-white/25 border border-white/20 backdrop-blur-md transition-all duration-300 text-white focus:outline-none hover:scale-110" title="Nous écrire par courriel">
+                                        <Icon name="mail" className="w-4.5 h-4.5 sm:w-5 sm:h-5" />
+                                    </a>
                                 </div>
+                                
+                                {/* Bouton Retour dynamique */}
+                                <button onClick={navigateBack} className={`px-5 py-2.5 rounded-xl bg-white/15 hover:bg-white/25 border border-white/20 backdrop-blur-md transition-all duration-300 text-xs sm:text-sm font-bold tracking-wide flex items-center gap-2.5 shadow-sm text-white focus:outline-none ${currentView === 'home' ? 'hidden' : 'flex'}`}>
+                                    <Icon name="arrow-left" className="w-4 h-4" /> <span className="hidden sm:inline">Retour</span>
+                                </button>
                             </div>
                         </div>
                     </header>
 
                     {/* Contenu principal */}
-                    <main className="flex-grow max-w-7xl w-full mx-auto px-4 py-8 relative z-10">
+                    <main className="flex-grow max-w-7xl w-full mx-auto px-4 py-8">
                         {viewData.isTool ? (
                             <IntegerSimulator />
                         ) : (
